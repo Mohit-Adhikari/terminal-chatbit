@@ -1,0 +1,64 @@
+2026-05-28 15:53:45,095 - DEBUG - Using proactor: IocpProactor
+2026-05-28 15:53:58,017 - DEBUG - connect_tcp.started host='generativelanguage.googleapis.com' port=443 local_address=None timeout=20 socket_options=None
+2026-05-28 15:54:03,660 - DEBUG - connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x0000019FA96F5D90>
+2026-05-28 15:54:03,660 - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x0000019FA96BDDD0> server_hostname='generativelanguage.googleapis.com' timeout=20
+2026-05-28 15:54:07,635 - DEBUG - start_tls.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x0000019FA68EBB30>
+2026-05-28 15:54:07,635 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2026-05-28 15:54:07,650 - DEBUG - send_request_headers.complete
+2026-05-28 15:54:07,650 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2026-05-28 15:54:07,650 - DEBUG - send_request_body.complete
+2026-05-28 15:54:07,650 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2026-05-28 15:54:13,543 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'X-Gemini-Service-Tier', b'standard'), (b'Content-Type', b'application/json; charset=UTF-8'), (b'Vary', b'Origin'), (b'Vary', b'X-Origin'), (b'Vary', b'Referer'), (b'Content-Encoding', b'gzip'), (b'Date', b'Thu, 28 May 2026 10:09:09 GMT'), (b'Server', b'scaffolding on HTTPServer2'), (b'X-XSS-Protection', b'0'), (b'X-Frame-Options', b'SAMEORIGIN'), (b'X-Content-Type-Options', b'nosniff'), (b'Server-Timing', b'gfet4t7; dur=2735'), (b'Alt-Svc', b'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'), (b'Transfer-Encoding', b'chunked')])
+2026-05-28 15:54:13,545 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2026-05-28 15:54:13,545 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2026-05-28 15:54:13,547 - DEBUG - receive_response_body.complete
+2026-05-28 15:54:13,547 - DEBUG - response_closed.started
+2026-05-28 15:54:13,549 - DEBUG - response_closed.complete
+2026-05-28 15:54:13,551 - ERROR - The error was caught, which is 1 validation error for chatschema
+chat
+  String should have at most 150 characters [type=string_too_long, input_value='Albert Einstein was a Ge...tion of quantum theory.', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.13/v/string_too_long
+2026-05-28 15:54:13,555 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2026-05-28 15:54:13,557 - DEBUG - send_request_headers.complete
+2026-05-28 15:54:13,557 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2026-05-28 15:54:13,557 - DEBUG - send_request_body.complete
+2026-05-28 15:54:13,557 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2026-05-28 15:54:16,776 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'X-Gemini-Service-Tier', b'standard'), (b'Content-Type', b'application/json; charset=UTF-8'), (b'Vary', b'Origin'), (b'Vary', b'X-Origin'), (b'Vary', b'Referer'), (b'Content-Encoding', b'gzip'), (b'Date', b'Thu, 28 May 2026 10:09:14 GMT'), (b'Server', b'scaffolding on HTTPServer2'), (b'X-XSS-Protection', b'0'), (b'X-Frame-Options', b'SAMEORIGIN'), (b'X-Content-Type-Options', b'nosniff'), (b'Server-Timing', b'gfet4t7; dur=1807'), (b'Alt-Svc', b'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'), (b'Transfer-Encoding', b'chunked')])
+2026-05-28 15:54:16,776 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2026-05-28 15:54:16,776 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2026-05-28 15:54:16,776 - DEBUG - receive_response_body.complete
+2026-05-28 15:54:16,778 - DEBUG - response_closed.started
+2026-05-28 15:54:16,778 - DEBUG - response_closed.complete
+2026-05-28 15:54:16,778 - ERROR - The error was caught, which is 1 validation error for chatschema
+chat
+  String should have at most 150 characters [type=string_too_long, input_value='Albert Einstein was a Ge...tion of quantum theory.', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.13/v/string_too_long
+2026-05-28 15:54:16,785 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2026-05-28 15:54:16,786 - DEBUG - send_request_headers.complete
+2026-05-28 15:54:16,787 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2026-05-28 15:54:16,787 - DEBUG - send_request_body.complete
+2026-05-28 15:54:16,787 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2026-05-28 15:54:21,556 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'X-Gemini-Service-Tier', b'standard'), (b'Content-Type', b'application/json; charset=UTF-8'), (b'Vary', b'Origin'), (b'Vary', b'X-Origin'), (b'Vary', b'Referer'), (b'Content-Encoding', b'gzip'), (b'Date', b'Thu, 28 May 2026 10:09:17 GMT'), (b'Server', b'scaffolding on HTTPServer2'), (b'X-XSS-Protection', b'0'), (b'X-Frame-Options', b'SAMEORIGIN'), (b'X-Content-Type-Options', b'nosniff'), (b'Server-Timing', b'gfet4t7; dur=1951'), (b'Alt-Svc', b'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'), (b'Transfer-Encoding', b'chunked')])
+2026-05-28 15:54:21,556 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2026-05-28 15:54:21,556 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2026-05-28 15:54:21,668 - DEBUG - receive_response_body.complete
+2026-05-28 15:54:21,668 - DEBUG - response_closed.started
+2026-05-28 15:54:21,668 - DEBUG - response_closed.complete
+2026-05-28 15:54:21,668 - ERROR - The error was caught, which is 1 validation error for chatschema
+chat
+  String should have at most 150 characters [type=string_too_long, input_value="Albert Einstein was a Ge...tion of quantum theory.", input_type=str]
+    For further information visit https://errors.pydantic.dev/2.13/v/string_too_long
+2026-05-28 15:54:21,668 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2026-05-28 15:54:21,668 - DEBUG - send_request_headers.complete
+2026-05-28 15:54:21,668 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2026-05-28 15:54:21,668 - DEBUG - send_request_body.complete
+2026-05-28 15:54:21,668 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2026-05-28 15:54:25,144 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'X-Gemini-Service-Tier', b'standard'), (b'Content-Type', b'application/json; charset=UTF-8'), (b'Vary', b'Origin'), (b'Vary', b'X-Origin'), (b'Vary', b'Referer'), (b'Content-Encoding', b'gzip'), (b'Date', b'Thu, 28 May 2026 10:09:21 GMT'), (b'Server', b'scaffolding on HTTPServer2'), (b'X-XSS-Protection', b'0'), (b'X-Frame-Options', b'SAMEORIGIN'), (b'X-Content-Type-Options', b'nosniff'), (b'Server-Timing', b'gfet4t7; dur=1134'), (b'Alt-Svc', b'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'), (b'Transfer-Encoding', b'chunked')])
+2026-05-28 15:54:25,160 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2026-05-28 15:54:25,160 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2026-05-28 15:54:25,176 - DEBUG - receive_response_body.complete
+2026-05-28 15:54:25,176 - DEBUG - response_closed.started
+2026-05-28 15:54:25,176 - DEBUG - response_closed.complete
+2026-05-28 15:54:25,176 - DEBUG - The chat displayed was chat='Albert Einstein was a German-born theoretical physicist. He developed the theory of relativity, one of the two pillars of modern physics.' role='model' and role was 'model'
+2026-05-28 15:54:25,176 - DEBUG - close.started
+2026-05-28 15:54:25,176 - DEBUG - close.complete
