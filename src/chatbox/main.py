@@ -4,7 +4,7 @@ import os
 import sys
 from typing import Awaitable, Callable
 
-APP_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "app"))
+APP_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), "app"))
 if APP_DIR not in sys.path:
     # Ensure local app providers can be imported when running as a module.
     sys.path.insert(0, APP_DIR)

@@ -1,17 +1,33 @@
-2026-05-28 23:29:33,694 - DEBUG - Using proactor: IocpProactor
-2026-05-28 23:29:39,081 - DEBUG - connect_tcp.started host='localhost' port=11434 local_address=None timeout=30 socket_options=None
-2026-05-28 23:29:39,347 - DEBUG - connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x00000194C224E810>
-2026-05-28 23:29:39,349 - DEBUG - send_request_headers.started request=<Request [b'POST']>
-2026-05-28 23:29:39,349 - DEBUG - send_request_headers.complete
-2026-05-28 23:29:39,350 - DEBUG - send_request_body.started request=<Request [b'POST']>
-2026-05-28 23:29:39,350 - DEBUG - send_request_body.complete
-2026-05-28 23:29:39,350 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
-2026-05-28 23:29:41,260 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Alt-Svc', b'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'), (b'Content-Type', b'application/json'), (b'Date', b'Thu, 28 May 2026 17:44:41 GMT'), (b'Server', b'Google Frontend'), (b'Set-Cookie', b'aid=3a5c4fd4-eebc-467d-b395-4a89cbaf1f22; Path=/; Max-Age=31536000; HttpOnly; Secure; SameSite=Lax'), (b'Traceparent', b'00-2f9b7310ad680bb702429f606abe934e-822a6017cb9cd320-00'), (b'Via', b'1.1 google'), (b'X-Build-Commit', b'92ed0459bece7c27000bcae0c663e27960513001'), (b'X-Build-Time', b'2026-05-28T10:40:08-07:00'), (b'X-Cloud-Trace-Context', b'2f9b7310ad680bb702429f606abe934e/9379414829269046048'), (b'X-Frame-Options', b'DENY'), (b'X-Request-Id', b'1f4a46a3-7c86-4463-bd37-36526bd95060'), (b'Transfer-Encoding', b'chunked')])
-2026-05-28 23:29:41,260 - INFO - HTTP Request: POST http://localhost:11434/api/chat "HTTP/1.1 200 OK"
-2026-05-28 23:29:41,260 - DEBUG - receive_response_body.started request=<Request [b'POST']>
-2026-05-28 23:29:41,260 - DEBUG - receive_response_body.complete
-2026-05-28 23:29:41,260 - DEBUG - response_closed.started
-2026-05-28 23:29:41,260 - DEBUG - response_closed.complete
-2026-05-28 23:29:41,260 - DEBUG - The chat displayed was Hello! I'm ready to help you explore the wonders of science. Do you have a question about biology, chemistry, or physics? and role was 'assistant'
-2026-05-28 23:29:41,260 - DEBUG - close.started
-2026-05-28 23:29:41,265 - DEBUG - close.complete
+2026-05-28 23:52:50,127 - DEBUG - Using proactor: IocpProactor
+2026-05-28 23:52:53,494 - DEBUG - connect_tcp.started host='localhost' port=11434 local_address=None timeout=30 socket_options=None
+2026-05-28 23:52:53,769 - DEBUG - connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x000001F38A80EBA0>
+2026-05-28 23:52:53,769 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2026-05-28 23:52:53,769 - DEBUG - send_request_headers.complete
+2026-05-28 23:52:53,772 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2026-05-28 23:52:53,772 - DEBUG - send_request_body.complete
+2026-05-28 23:52:53,772 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2026-05-28 23:52:57,516 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Alt-Svc', b'h3=":443"; ma=2592000'), (b'Content-Type', b'application/json'), (b'Date', b'Thu, 28 May 2026 18:07:57 GMT'), (b'Server', b'Google Frontend'), (b'Set-Cookie', b'aid=0f68c37a-211a-4247-b217-c55907b84940; Path=/; Max-Age=31536000; HttpOnly; Secure; SameSite=Lax'), (b'Traceparent', b'00-407319f2616bd49f05b5d847de38629f-f3707aca592a6256-00'), (b'Via', b'1.1 google'), (b'X-Build-Commit', b'92ed0459bece7c27000bcae0c663e27960513001'), (b'X-Build-Time', b'2026-05-28T10:40:08-07:00'), (b'X-Cloud-Trace-Context', b'407319f2616bd49f05b5d847de38629f/17541655558106014294'), (b'X-Frame-Options', b'DENY'), (b'X-Request-Id', b'4ca1480f-8b39-4deb-836b-2e4b703742b6'), (b'Transfer-Encoding', b'chunked')])
+2026-05-28 23:52:57,517 - INFO - HTTP Request: POST http://localhost:11434/api/chat "HTTP/1.1 200 OK"
+2026-05-28 23:52:57,519 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2026-05-28 23:52:57,519 - DEBUG - receive_response_body.complete
+2026-05-28 23:52:57,521 - DEBUG - response_closed.started
+2026-05-28 23:52:57,521 - DEBUG - response_closed.complete
+2026-05-28 23:52:57,521 - DEBUG - The chat displayed was Not much! I'm ready to help you explore the wonders of science. Do you have a question about physics, chemistry, or biology? and role was 'assistant'
+2026-05-28 23:52:57,523 - DEBUG - close.started
+2026-05-28 23:52:57,523 - DEBUG - close.complete
+2026-05-28 23:53:04,848 - DEBUG - connect_tcp.started host='localhost' port=11434 local_address=None timeout=30 socket_options=None
+2026-05-28 23:53:05,123 - DEBUG - connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x000001F38B08ECF0>
+2026-05-28 23:53:05,124 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2026-05-28 23:53:05,124 - DEBUG - send_request_headers.complete
+2026-05-28 23:53:05,124 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2026-05-28 23:53:05,125 - DEBUG - send_request_body.complete
+2026-05-28 23:53:05,125 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2026-05-28 23:53:17,206 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Alt-Svc', b'h3=":443"; ma=2592000'), (b'Content-Type', b'application/json'), (b'Date', b'Thu, 28 May 2026 18:08:16 GMT'), (b'Server', b'Google Frontend'), (b'Set-Cookie', b'aid=7223ab88-c6fa-40d4-ba10-9790e0c8906a; Path=/; Max-Age=31536000; HttpOnly; Secure; SameSite=Lax'), (b'Traceparent', b'00-5ca4777252701a45ae9c10bb67f89058-3db602cc1d40b188-00'), (b'Via', b'1.1 google'), (b'X-Build-Commit', b'92ed0459bece7c27000bcae0c663e27960513001'), (b'X-Build-Time', b'2026-05-28T10:40:08-07:00'), (b'X-Cloud-Trace-Context', b'5ca4777252701a45ae9c10bb67f89058/4446744757762306440'), (b'X-Frame-Options', b'DENY'), (b'X-Request-Id', b'99e4c557-fcfd-4e2d-b176-d4b1f7b442b8'), (b'Transfer-Encoding', b'chunked')])
+2026-05-28 23:53:17,206 - INFO - HTTP Request: POST http://localhost:11434/api/chat "HTTP/1.1 200 OK"
+2026-05-28 23:53:17,206 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2026-05-28 23:53:17,206 - DEBUG - receive_response_body.complete
+2026-05-28 23:53:17,206 - DEBUG - response_closed.started
+2026-05-28 23:53:17,206 - DEBUG - response_closed.complete
+2026-05-28 23:53:17,206 - DEBUG - The chat displayed was Hardness is subjective. Quantum physics and organic chemistry are often challenging due to their abstract concepts and complex memorization. and role was 'assistant'
+2026-05-28 23:53:17,206 - DEBUG - close.started
+2026-05-28 23:53:17,212 - DEBUG - close.complete
