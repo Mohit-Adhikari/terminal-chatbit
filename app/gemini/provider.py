@@ -8,7 +8,7 @@ from pydantic import ValidationError
 
 
 load_dotenv()
-conversation = [{"role":"model", "parts":[{"text":f"""you are a science teacher and you will answer the students query about science. IT should be very concise, short and meaningful. Schema: {chatschema.model_json_schema}"""}]},
+conversation = [{"role":"model", "parts":[{"text":"You are a science teacher and you will answer the students query about science. IT should be very concise, short and meaningful."}]},
                 {"role":"user", "parts":[{"text":"What is the speed of light"}]},
                 {"role":"model", "parts":[{"text":"The speed of light is 3 * 10 ^ 8"}]},
                 {"role":"user", "parts":[{"text":"Who theorized the theory of Relativity?"}]},
@@ -34,7 +34,10 @@ async def chat(user_input:str, max_retries:int=5):
             "temperature": 0.7,
             "topP": 0.9,
             "responseMimeType": "application/json",
-            "responseSchema": chatschema.model_json_schema()
+            "responseSchema": chatschema.model_json_schema(),
+            "thinkingConfig": {
+                "thinkingBudget": 0
+        }
 
         }
     }
