@@ -23,7 +23,7 @@ conversation = [{"role":"model", "parts":[{"text":"You are a science teacher and
                 ]  # 🧠 memory
 
 
-async def chat(user_input:str, max_retries:int=5):
+async def chat(user_input: str, max_retries: int = 5, thinking: bool = False):
     url="https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent"
     header={
         "x-goog-api-key": os.getenv("GEMINI_API_KEY"),
@@ -43,7 +43,7 @@ async def chat(user_input:str, max_retries:int=5):
             "responseMimeType": "application/json",
             "responseSchema": chatschema.model_json_schema(),
             "thinkingConfig": {
-                "thinkingBudget": 0
+            "thinkingBudget": 1024 if thinking else 0
         }
 
         }

@@ -13,7 +13,7 @@ logging.basicConfig(
     level=logging.DEBUG     # Capture INFO, WARNING, ERROR, and CRITICAL
 )
 
-async def chat(user_input:str, max_retries:int=5):
+async def chat(user_input: str, max_retries: int = 5, thinking: bool = False):
     url="http://localhost:11434/api/chat"
     conversation = [
     {
@@ -32,7 +32,7 @@ async def chat(user_input:str, max_retries:int=5):
     payload = {
         "model": "gemma4:31b-cloud",
         "messages": conversation,
-        "think": False,
+        "think": thinking,
         "stream": False
     }
 
@@ -52,10 +52,8 @@ async def chat(user_input:str, max_retries:int=5):
 
                 raw=response_json.get('message').get('content')
                 raw = raw.replace("```json", "").replace("```", "").strip()
-                print(type(raw))
                 
                 data=json.loads(raw)
-                print(data)
 
                 #role=response_json.get('message').get('role')
                 
@@ -66,7 +64,7 @@ async def chat(user_input:str, max_retries:int=5):
                     "role": chat.role,
                     "content": chat.chat
                 })
-                print(conversation)
+                
                 raw_text=response_json
                 logging.debug("The chat displayed was %s and role was %r", chat.chat, chat.role)
 
