@@ -86,10 +86,7 @@ async def chat(user_input:str, max_retries:int=5):
                     "role": role,
                     "parts": [{"text": reply}]
                 })
-                raw_text={
-                    'bot':reply,
-                    'role': role,
-                }
+                raw_text=response_json
                 logging.debug("The chat displayed was %s and role was %r", chat, role)
 
                 return chat
