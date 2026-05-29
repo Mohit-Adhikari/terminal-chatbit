@@ -1,33 +1,49 @@
-2026-05-28 23:52:50,127 - DEBUG - Using proactor: IocpProactor
-2026-05-28 23:52:53,494 - DEBUG - connect_tcp.started host='localhost' port=11434 local_address=None timeout=30 socket_options=None
-2026-05-28 23:52:53,769 - DEBUG - connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x000001F38A80EBA0>
-2026-05-28 23:52:53,769 - DEBUG - send_request_headers.started request=<Request [b'POST']>
-2026-05-28 23:52:53,769 - DEBUG - send_request_headers.complete
-2026-05-28 23:52:53,772 - DEBUG - send_request_body.started request=<Request [b'POST']>
-2026-05-28 23:52:53,772 - DEBUG - send_request_body.complete
-2026-05-28 23:52:53,772 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
-2026-05-28 23:52:57,516 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Alt-Svc', b'h3=":443"; ma=2592000'), (b'Content-Type', b'application/json'), (b'Date', b'Thu, 28 May 2026 18:07:57 GMT'), (b'Server', b'Google Frontend'), (b'Set-Cookie', b'aid=0f68c37a-211a-4247-b217-c55907b84940; Path=/; Max-Age=31536000; HttpOnly; Secure; SameSite=Lax'), (b'Traceparent', b'00-407319f2616bd49f05b5d847de38629f-f3707aca592a6256-00'), (b'Via', b'1.1 google'), (b'X-Build-Commit', b'92ed0459bece7c27000bcae0c663e27960513001'), (b'X-Build-Time', b'2026-05-28T10:40:08-07:00'), (b'X-Cloud-Trace-Context', b'407319f2616bd49f05b5d847de38629f/17541655558106014294'), (b'X-Frame-Options', b'DENY'), (b'X-Request-Id', b'4ca1480f-8b39-4deb-836b-2e4b703742b6'), (b'Transfer-Encoding', b'chunked')])
-2026-05-28 23:52:57,517 - INFO - HTTP Request: POST http://localhost:11434/api/chat "HTTP/1.1 200 OK"
-2026-05-28 23:52:57,519 - DEBUG - receive_response_body.started request=<Request [b'POST']>
-2026-05-28 23:52:57,519 - DEBUG - receive_response_body.complete
-2026-05-28 23:52:57,521 - DEBUG - response_closed.started
-2026-05-28 23:52:57,521 - DEBUG - response_closed.complete
-2026-05-28 23:52:57,521 - DEBUG - The chat displayed was Not much! I'm ready to help you explore the wonders of science. Do you have a question about physics, chemistry, or biology? and role was 'assistant'
-2026-05-28 23:52:57,523 - DEBUG - close.started
-2026-05-28 23:52:57,523 - DEBUG - close.complete
-2026-05-28 23:53:04,848 - DEBUG - connect_tcp.started host='localhost' port=11434 local_address=None timeout=30 socket_options=None
-2026-05-28 23:53:05,123 - DEBUG - connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x000001F38B08ECF0>
-2026-05-28 23:53:05,124 - DEBUG - send_request_headers.started request=<Request [b'POST']>
-2026-05-28 23:53:05,124 - DEBUG - send_request_headers.complete
-2026-05-28 23:53:05,124 - DEBUG - send_request_body.started request=<Request [b'POST']>
-2026-05-28 23:53:05,125 - DEBUG - send_request_body.complete
-2026-05-28 23:53:05,125 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
-2026-05-28 23:53:17,206 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Alt-Svc', b'h3=":443"; ma=2592000'), (b'Content-Type', b'application/json'), (b'Date', b'Thu, 28 May 2026 18:08:16 GMT'), (b'Server', b'Google Frontend'), (b'Set-Cookie', b'aid=7223ab88-c6fa-40d4-ba10-9790e0c8906a; Path=/; Max-Age=31536000; HttpOnly; Secure; SameSite=Lax'), (b'Traceparent', b'00-5ca4777252701a45ae9c10bb67f89058-3db602cc1d40b188-00'), (b'Via', b'1.1 google'), (b'X-Build-Commit', b'92ed0459bece7c27000bcae0c663e27960513001'), (b'X-Build-Time', b'2026-05-28T10:40:08-07:00'), (b'X-Cloud-Trace-Context', b'5ca4777252701a45ae9c10bb67f89058/4446744757762306440'), (b'X-Frame-Options', b'DENY'), (b'X-Request-Id', b'99e4c557-fcfd-4e2d-b176-d4b1f7b442b8'), (b'Transfer-Encoding', b'chunked')])
-2026-05-28 23:53:17,206 - INFO - HTTP Request: POST http://localhost:11434/api/chat "HTTP/1.1 200 OK"
-2026-05-28 23:53:17,206 - DEBUG - receive_response_body.started request=<Request [b'POST']>
-2026-05-28 23:53:17,206 - DEBUG - receive_response_body.complete
-2026-05-28 23:53:17,206 - DEBUG - response_closed.started
-2026-05-28 23:53:17,206 - DEBUG - response_closed.complete
-2026-05-28 23:53:17,206 - DEBUG - The chat displayed was Hardness is subjective. Quantum physics and organic chemistry are often challenging due to their abstract concepts and complex memorization. and role was 'assistant'
-2026-05-28 23:53:17,206 - DEBUG - close.started
-2026-05-28 23:53:17,212 - DEBUG - close.complete
+2026-05-29 09:46:30,633 ERROR gemini.provider - Gemini quota exceeded
+2026-05-29 10:01:42,737 INFO __main__ - Starting chat loop with provider=ollama thinking=True
+2026-05-29 10:01:47,049 INFO ollama.ollama_provider - Ollama chat request received thinking=True
+2026-05-29 10:01:55,324 INFO httpx - HTTP Request: POST http://localhost:11434/api/chat "HTTP/1.1 200 OK"
+2026-05-29 10:01:55,324 INFO ollama.ollama_provider - Ollama response received status=200
+2026-05-29 10:02:32,366 INFO ollama.ollama_provider - Ollama chat request received thinking=True
+2026-05-29 10:02:50,522 INFO httpx - HTTP Request: POST http://localhost:11434/api/chat "HTTP/1.1 200 OK"
+2026-05-29 10:02:50,522 INFO ollama.ollama_provider - Ollama response received status=200
+2026-05-29 10:13:58,286 INFO __main__ - User ended chat session
+2026-05-29 10:14:12,121 INFO __main__ - Starting chat loop with provider=gemini thinking=True
+2026-05-29 10:14:15,490 INFO gemini.provider - Gemini chat request received thinking=True
+2026-05-29 10:14:18,489 INFO httpx - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2026-05-29 10:14:18,504 INFO gemini.provider - Gemini response received status=200
+2026-05-29 10:14:44,349 INFO gemini.provider - Gemini chat request received thinking=True
+2026-05-29 10:14:46,523 INFO httpx - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2026-05-29 10:14:46,523 INFO gemini.provider - Gemini response received status=200
+2026-05-29 10:16:00,249 INFO __main__ - User ended chat session
+2026-05-29 10:21:10,082 INFO __main__ - Starting chat loop with provider=gemini thinking=True
+2026-05-29 10:21:36,025 INFO gemini.provider - Gemini chat request received thinking=True
+2026-05-29 10:21:38,582 INFO httpx - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2026-05-29 10:21:38,598 INFO gemini.provider - Gemini response received status=200
+2026-05-29 10:21:46,740 INFO gemini.provider - Gemini chat request received thinking=True
+2026-05-29 10:21:49,026 INFO httpx - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2026-05-29 10:21:49,026 INFO gemini.provider - Gemini response received status=200
+2026-05-29 10:22:09,978 INFO __main__ - User ended chat session
+2026-05-29 10:22:20,355 INFO __main__ - Starting chat loop with provider=ollama thinking=True
+2026-05-29 10:22:26,664 INFO ollama.ollama_provider - Ollama chat request received thinking=True
+2026-05-29 10:22:31,271 INFO httpx - HTTP Request: POST http://localhost:11434/api/chat "HTTP/1.1 200 OK"
+2026-05-29 10:22:31,271 INFO ollama.ollama_provider - Ollama response received status=200
+2026-05-29 10:22:39,821 INFO ollama.ollama_provider - Ollama chat request received thinking=True
+2026-05-29 10:22:44,889 INFO httpx - HTTP Request: POST http://localhost:11434/api/chat "HTTP/1.1 200 OK"
+2026-05-29 10:22:44,889 INFO ollama.ollama_provider - Ollama response received status=200
+2026-05-29 10:25:15,900 INFO ollama.ollama_provider - Ollama chat request received thinking=True
+2026-05-29 10:25:20,096 INFO httpx - HTTP Request: POST http://localhost:11434/api/chat "HTTP/1.1 200 OK"
+2026-05-29 10:25:20,096 INFO ollama.ollama_provider - Ollama response received status=200
+2026-05-29 10:25:23,045 INFO __main__ - User ended chat session
+2026-05-29 10:48:04,153 INFO __main__ - Starting chat loop with provider=ollama thinking=True
+2026-05-29 10:48:08,093 INFO root - Ollama chat request received thinking=True
+2026-05-29 10:48:25,044 INFO httpx - HTTP Request: POST http://localhost:11434/api/chat "HTTP/1.1 200 OK"
+2026-05-29 10:48:25,048 INFO root - Ollama response received status=200
+2026-05-29 10:48:37,203 INFO root - Ollama chat request received thinking=True
+2026-05-29 10:48:42,996 INFO httpx - HTTP Request: POST http://localhost:11434/api/chat "HTTP/1.1 200 OK"
+2026-05-29 10:48:42,997 INFO root - Ollama response received status=200
+2026-05-29 10:49:38,279 INFO __main__ - User ended chat session
+2026-05-29 10:49:47,420 INFO __main__ - Starting chat loop with provider=gemini thinking=True
+2026-05-29 10:49:55,218 INFO gemini.provider - Gemini chat request received thinking=True
+2026-05-29 10:49:59,331 INFO httpx - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2026-05-29 10:49:59,336 INFO gemini.provider - Gemini response received status=200
+2026-05-29 10:50:06,408 INFO __main__ - User ended chat session

@@ -1,20 +1,19 @@
 import json
 import logging
-
+from dotenv import load_dotenv
 import httpx
 from pydantic import ValidationError
+import os
 
 from schema.schema import chatschema
 
-logging.basicConfig(
-    filename='app.log',     # The name of the file
-    filemode='w',           # 'a' to append logs, 'w' to overwrite the file every run
-    format='%(asctime)s - %(levelname)s - %(message)s',
-    level=logging.DEBUG     # Capture INFO, WARNING, ERROR, and CRITICAL
-)
+logger = logging.getLogger()
+load_dotenv()
+
 
 async def chat(user_input: str, max_retries: int = 5, thinking: bool = False):
-    url="http://localhost:11434/api/chat"
+    url = os.getenv("OLLAMA_URL")
+    logger.info("Ollama chat request received thinking=%s", thinking)
     conversation = [
     {
         "role": "system",
@@ -36,28 +35,28 @@ async def chat(user_input: str, max_retries: int = 5, thinking: bool = False):
         "stream": False
     }
 
-
-
+    raw_text = None
     async with httpx.AsyncClient(timeout=30) as client:
         for attempt in range(max_retries):
             try:
-                response= await client.post(url=url,json=payload)
-                response_json=response.json()
-                if(response.status_code==503):
-                    logging.warning("Server Busy")
-                    return chatschema(chat="The server is busy right now",role="model")
-                if(response.status_code==429):
-                    logging.error("Quota Excedded.")
-                    return chatschema(chat="Your quota exceded. Try again later",role="model")
+                response = await client.post(url=url, json=payload)
+                response_json = response.json()
+                logger.info("Ollama response received status=%s", response.status_code)
+                if response.status_code == 503:
+                    logger.warning("Ollama server busy")
+                    return chatschema(chat="The server is busy right now", role="model")
+                if response.status_code == 429:
+                    logger.error("Ollama quota exceeded")
+                    return chatschema(chat="Your quota exceded. Try again later", role="model")
 
-                raw=response_json.get('message').get('content')
+                raw = response_json.get('message').get('content')
                 raw = raw.replace("```json", "").replace("```", "").strip()
                 
-                data=json.loads(raw)
+                data = json.loads(raw)
 
                 #role=response_json.get('message').get('role')
                 
-                chat=chatschema(**data)       
+                chat = chatschema(**data)
 
 
                 conversation.append({
@@ -65,17 +64,23 @@ async def chat(user_input: str, max_retries: int = 5, thinking: bool = False):
                     "content": chat.chat
                 })
                 
-                raw_text=response_json
-                logging.debug("The chat displayed was %s and role was %r", chat.chat, chat.role)
+                raw_text = response_json
+                logger.debug("Ollama chat parsed role=%r chat=%s", chat.role, chat.chat)
 
                 return chat
             except (ValidationError, json.JSONDecodeError) as e:
-                 print(f"Attempt {attempt + 1} failed with error: {e}")
+                 logger.warning(
+                     "Ollama invalid model output on attempt %s/%s: %s",
+                     attempt + 1,
+                     max_retries,
+                     e,
+                 )
                 
                  if attempt == max_retries - 1:
+                     logger.exception("Ollama max retries reached while recovering malformed output")
                      raise RuntimeError("Max retries reached. Unable to recover malformed LLM output.") from e
                 
-                 logging.error("The error was caught, which is %s", e)
+                 logger.error("Ollama recovery prompt will be sent after parsing failure")
                 
                  # Recovery step: Feed the error back to the LLM so it can fix its own mistake
                  conversation.append({
@@ -96,4 +101,10 @@ async def chat(user_input: str, max_retries: int = 5, thinking: bool = False):
                                  user_input:
                                  {user_input}
                                          """})
+            except httpx.HTTPError as e:
+                logger.exception(
+                    "Ollama transport error on attempt %s/%s", attempt + 1, max_retries
+                )
+                if attempt == max_retries - 1:
+                    raise RuntimeError("Max retries reached due to Ollama connectivity issues.") from e
             

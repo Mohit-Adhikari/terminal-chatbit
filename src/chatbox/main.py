@@ -1,5 +1,6 @@
 import argparse
 import asyncio
+import logging
 import os
 import sys
 from typing import Awaitable, Callable
@@ -18,6 +19,31 @@ PROVIDERS: dict[str, ChatFn] = {
     "gemini": gemini_chat,
     "ollama": ollama_chat,
 }
+
+
+logger = logging.getLogger(__name__)
+
+
+def setup_logging() -> None:
+    root_logger = logging.getLogger()
+    if root_logger.handlers:
+        return
+
+    formatter = logging.Formatter(
+        "%(asctime)s %(levelname)s %(name)s - %(message)s"
+    )
+
+    stream_handler = logging.StreamHandler()
+    stream_handler.setFormatter(formatter)
+    stream_handler.setLevel(logging.ERROR)
+
+    file_handler = logging.FileHandler("app.log", mode="a", encoding="utf-8")
+    file_handler.setFormatter(formatter)
+    file_handler.setLevel(logging.INFO)
+
+    root_logger.setLevel(logging.DEBUG)
+    root_logger.addHandler(stream_handler)
+    root_logger.addHandler(file_handler)
 
 
 def parse_bool(value: str) -> bool:
@@ -48,16 +74,19 @@ def build_parser() -> argparse.ArgumentParser:
 
 async def run_chat(provider: str, thinking: bool) -> None:
     chat_fn = PROVIDERS[provider]
+    logger.info("Starting chat loop with provider=%s thinking=%s", provider, thinking)
     print("Chatbot started (type 'exit' to stop)\n")
     while True:
         user_input = input("You: ")
         if user_input.lower() == "exit":
+            logger.info("User ended chat session")
             break
         reply = await chat_fn(user_input, thinking=thinking)
         print("Bot:", reply.chat)
 
 
 def main(argv: list[str] | None = None) -> None:
+    setup_logging()
     args = build_parser().parse_args(argv)
     asyncio.run(run_chat(args.provider, args.thinking))
 
