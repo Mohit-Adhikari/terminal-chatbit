@@ -63,6 +63,7 @@ async def run_chat(thinking: bool) -> None:
     print("Chatbot started (type 'exit' to stop)\n")
     while True:
         user_input = input("You: ")
+        logger.info("The user question was: %s",user_input)
         if user_input.lower() == "exit":
             logger.info("User ended chat session")
             break

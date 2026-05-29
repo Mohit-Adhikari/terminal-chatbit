@@ -1,5 +1,14 @@
 from pydantic import BaseModel, Field, ValidationError
-from typing import List, Literal
+from typing import List, Literal, Optional
+
+class MessageSchema(BaseModel):
+    role: str
+    content: str
+
+class OllamaStreamChunk(BaseModel):
+    model: str
+    message: Optional[MessageSchema] = None
+    done: bool
 
 
 class chatschema(BaseModel):
