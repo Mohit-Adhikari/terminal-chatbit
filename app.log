@@ -47,3 +47,160 @@
 2026-05-29 10:49:59,331 INFO httpx - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
 2026-05-29 10:49:59,336 INFO gemini.provider - Gemini response received status=200
 2026-05-29 10:50:06,408 INFO __main__ - User ended chat session
+2026-05-29 11:09:07,101 INFO __main__ - Starting chat loop with provider=ollama thinking=True
+2026-05-29 11:09:09,319 INFO root - Ollama chat request received thinking=True
+2026-05-29 11:09:13,646 INFO httpx - HTTP Request: POST http://localhost:11434/api/chat "HTTP/1.1 200 OK"
+2026-05-29 11:09:51,683 INFO __main__ - Starting chat loop with provider=ollama thinking=True
+2026-05-29 11:09:54,863 INFO root - Ollama chat request received thinking=True
+2026-05-29 11:10:17,692 INFO httpx - HTTP Request: POST http://localhost:11434/api/chat "HTTP/1.1 200 OK"
+2026-05-29 11:11:53,178 INFO root - Ollama chat request received thinking=True
+2026-05-29 11:12:00,680 INFO __main__ - Starting chat loop with provider=ollama thinking=True
+2026-05-29 11:12:02,684 INFO root - Ollama chat request received thinking=True
+2026-05-29 11:12:03,883 INFO httpx - HTTP Request: POST http://localhost:11434/api/chat "HTTP/1.1 200 OK"
+2026-05-29 11:12:17,298 INFO root - Ollama chat request received thinking=True
+2026-05-29 11:12:44,128 INFO httpx - HTTP Request: POST http://localhost:11434/api/chat "HTTP/1.1 200 OK"
+2026-05-29 11:35:21,057 INFO __main__ - User ended chat session
+2026-05-29 11:35:25,428 INFO __main__ - Starting chat loop with provider=ollama thinking=True
+2026-05-29 11:35:28,307 INFO root - Ollama chat request received thinking=True
+2026-05-29 11:35:29,490 INFO httpx - HTTP Request: POST http://localhost:11434/api/chat "HTTP/1.1 200 OK"
+2026-05-29 11:35:44,274 INFO __main__ - Starting chat loop with provider=ollama thinking=True
+2026-05-29 11:35:46,966 INFO root - Ollama chat request received thinking=True
+2026-05-29 11:35:48,180 INFO httpx - HTTP Request: POST http://localhost:11434/api/chat "HTTP/1.1 200 OK"
+2026-05-29 11:36:29,236 INFO __main__ - Starting chat loop with provider=ollama thinking=True
+2026-05-29 11:36:31,083 INFO root - Ollama chat request received thinking=True
+2026-05-29 11:36:32,189 INFO httpx - HTTP Request: POST http://localhost:11434/api/chat "HTTP/1.1 200 OK"
+2026-05-29 11:36:55,519 INFO root - Ollama chat request received thinking=True
+2026-05-29 11:36:57,586 INFO httpx - HTTP Request: POST http://localhost:11434/api/chat "HTTP/1.1 200 OK"
+2026-05-29 11:37:27,993 INFO __main__ - User ended chat session
+2026-05-29 11:37:29,464 INFO __main__ - Starting chat loop with provider=ollama thinking=True
+2026-05-29 11:37:32,153 INFO root - Ollama chat request received thinking=True
+2026-05-29 11:37:33,268 INFO httpx - HTTP Request: POST http://localhost:11434/api/chat "HTTP/1.1 200 OK"
+2026-05-29 11:37:33,268 INFO root - {'model': 'gemma4:31b', 'created_at': '2026-05-29T05:52:32.56156619Z', 'message': {'role': 'assistant', 'content': '', 'thinking': '*   User'}, 'done': False}
+2026-05-29 11:37:33,268 INFO root - {'model': 'gemma4:31b', 'created_at': '2026-05-29T05:52:32.589872746Z', 'message': {'role': 'assistant', 'content': '', 'thinking': ': "whats up"'}, 'done': False}
+2026-05-29 11:37:33,268 INFO root - {'model': 'gemma4:31b', 'created_at': '2026-05-29T05:52:32.618096734Z', 'message': {'role': 'assistant', 'content': '', 'thinking': '\n    *   Role'}, 'done': False}
+2026-05-29 11:37:33,318 INFO root - {'model': 'gemma4:31b', 'created_at': '2026-05-29T05:52:32.646401632Z', 'message': {'role': 'assistant', 'content': '', 'thinking': ': Science Teacher'}, 'done': False}
+2026-05-29 11:37:33,318 INFO root - {'model': 'gemma4:31b', 'created_at': '2026-05-29T05:52:32.674697156Z', 'message': {'role': 'assistant', 'content': '', 'thinking': '.\n    *'}, 'done': False}
+2026-05-29 11:37:33,376 INFO root - {'model': 'gemma4:31b', 'created_at': '2026-05-29T05:52:32.703032297Z', 'message': {'role': 'assistant', 'content': '', 'thinking': '   Constraint'}, 'done': False}
+2026-05-29 11:37:33,376 INFO root - {'model': 'gemma4:31b', 'created_at': '2026-05-29T05:52:32.703093084Z', 'message': {'role': 'assistant', 'content': '', 'thinking': ' 1: Very'}, 'done': False}
+2026-05-29 11:37:33,376 INFO root - {'model': 'gemma4:31b', 'created_at': '2026-05-29T05:52:32.731295556Z', 'message': {'role': 'assistant', 'content': '', 'thinking': ' concise, short, and'}, 'done': False}
+2026-05-29 11:37:33,472 INFO root - {'model': 'gemma4:31b', 'created_at': '2026-05-29T05:52:32.75960698Z', 'message': {'role': 'assistant', 'content': '', 'thinking': ' meaningful.\n    *'}, 'done': False}
+2026-05-29 11:37:33,472 INFO root - {'model': 'gemma4:31b', 'created_at': '2026-05-29T05:52:32.787887182Z', 'message': {'role': 'assistant', 'content': '', 'thinking': '   Constraint 2:'}, 'done': False}
+2026-05-29 11:37:33,472 INFO root - {'model': 'gemma4:31b', 'created_at': '2026-05-29T05:52:32.816161889Z', 'message': {'role': 'assistant', 'content': '', 'thinking': ' Return ONLY valid response matching'}, 'done': False}
+2026-05-29 11:37:33,513 INFO root - {'model': 'gemma4:31b', 'created_at': '2026-05-29T05:52:32.844418488Z', 'message': {'role': 'assistant', 'content': '', 'thinking': ' a specific schema ('}, 'done': False}
+2026-05-29 11:37:33,629 INFO root - {'model': 'gemma4:31b', 'created_at': '2026-05-29T05:52:32.872673217Z', 'message': {'role': 'assistant', 'content': '', 'thinking': 'chat'}, 'done': False}
+2026-05-29 11:37:33,630 INFO root - {'model': 'gemma4:31b', 'created_at': '2026-05-29T05:52:32.872728564Z', 'message': {'role': 'assistant', 'content': '', 'thinking': '=str, role='}, 'done': False}
+2026-05-29 11:37:33,630 INFO root - {'model': 'gemma4:31b', 'created_at': '2026-05-29T05:52:32.900929355Z', 'message': {'role': 'assistant', 'content': '', 'thinking': 'Literal).\n    *'}, 'done': False}
+2026-05-29 11:37:33,630 INFO root - {'model': 'gemma4:31b', 'created_at': '2026-05-29T05:52:32.929259444Z', 'message': {'role': 'assistant', 'content': '', 'thinking': '   Schema requirements'}, 'done': False}
+2026-05-29 11:37:33,630 INFO root - {'model': 'gemma4:31b', 'created_at': '2026-05-29T05:52:32.957500364Z', 'message': {'role': 'assistant', 'content': '', 'thinking': ': `chat`'}, 'done': False}
+2026-05-29 11:37:33,655 INFO root - {'model': 'gemma4:31b', 'created_at': '2026-05-29T05:52:32.985842347Z', 'message': {'role': 'assistant', 'content': '', 'thinking': ' (string,'}, 'done': False}
+2026-05-29 11:37:33,684 INFO root - {'model': 'gemma4:31b', 'created_at': '2026-05-29T05:52:33.0142167Z', 'message': {'role': 'assistant', 'content': '', 'thinking': ' 5-150'}, 'done': False}
+2026-05-29 11:37:33,729 INFO root - {'model': 'gemma4:31b', 'created_at': '2026-05-29T05:52:33.042562092Z', 'message': {'role': 'assistant', 'content': '', 'thinking': ' chars), `role`'}, 'done': False}
+2026-05-29 11:37:33,740 INFO root - {'model': 'gemma4:31b', 'created_at': '2026-05-29T05:52:33.070890751Z', 'message': {'role': 'assistant', 'content': '', 'thinking': ' (model'}, 'done': False}
+2026-05-29 11:37:33,769 INFO root - {'model': 'gemma4:31b', 'created_at': '2026-05-29T05:52:33.09923637Z', 'message': {'role': 'assistant', 'content': '', 'thinking': ','}, 'done': False}
+2026-05-29 11:37:33,911 INFO root - {'model': 'gemma4:31b', 'created_at': '2026-05-29T05:52:33.127542816Z', 'message': {'role': 'assistant', 'content': '', 'thinking': ' user, assistant'}, 'done': False}
+2026-05-29 11:37:33,911 INFO root - {'model': 'gemma4:31b', 'created_at': '2026-05-29T05:52:33.155919357Z', 'message': {'role': 'assistant', 'content': '', 'thinking': ').\n\n    *'}, 'done': False}
+2026-05-29 11:37:33,911 INFO root - {'model': 'gemma4:31b', 'created_at': '2026-05-29T05:52:33.184204476Z', 'message': {'role': 'assistant', 'content': '', 'thinking': '   The user is saying'}, 'done': False}
+2026-05-29 11:37:33,911 INFO root - {'model': 'gemma4:31b', 'created_at': '2026-05-29T05:52:33.184246818Z', 'message': {'role': 'assistant', 'content': '', 'thinking': ' a'}, 'done': False}
+2026-05-29 11:37:33,911 INFO root - {'model': 'gemma4:31b', 'created_at': '2026-05-29T05:52:33.212578928Z', 'message': {'role': 'assistant', 'content': '', 'thinking': ' casual'}, 'done': False}
+2026-05-29 11:37:33,911 INFO root - {'model': 'gemma4:31b', 'created_at': '2026-05-29T05:52:33.240874912Z', 'message': {'role': 'assistant', 'content': '', 'thinking': ' greeting.\n    *'}, 'done': False}
+2026-05-29 11:37:33,911 INFO root - {'model': 'gemma4:31b', 'created_at': '2026-05-29T05:52:33.269188316Z', 'message': {'role': 'assistant', 'content': '', 'thinking': '   As a science teacher'}, 'done': False}
+2026-05-29 11:37:33,941 INFO root - {'model': 'gemma4:31b', 'created_at': '2026-05-29T05:52:33.297496419Z', 'message': {'role': 'assistant', 'content': '', 'thinking': ', I should maintain'}, 'done': False}
+2026-05-29 11:37:33,967 INFO root - {'model': 'gemma4:31b', 'created_at': '2026-05-29T05:52:33.325787574Z', 'message': {'role': 'assistant', 'content': '', 'thinking': ' the'}, 'done': False}
+2026-05-29 11:37:33,996 INFO root - {'model': 'gemma4:31b', 'created_at': '2026-05-29T05:52:33.354097966Z', 'message': {'role': 'assistant', 'content': '', 'thinking': ' persona but be'}, 'done': False}
+2026-05-29 11:37:33,997 INFO root - {'model': 'gemma4:31b', 'created_at': '2026-05-29T05:52:33.354145975Z', 'message': {'role': 'assistant', 'content': '', 'thinking': ' concise'}, 'done': False}
+2026-05-29 11:37:34,024 INFO root - {'model': 'gemma4:31b', 'created_at': '2026-05-29T05:52:33.38237131Z', 'message': {'role': 'assistant', 'content': '', 'thinking': '.\n    *'}, 'done': False}
+2026-05-29 11:37:34,052 INFO root - {'model': 'gemma4:31b', 'created_at': '2026-05-29T05:52:33.410635274Z', 'message': {'role': 'assistant', 'content': '', 'thinking': '   Response: "Hello!'}, 'done': False}
+2026-05-29 11:37:34,081 INFO root - {'model': 'gemma4:31b', 'created_at': '2026-05-29T05:52:33.4389567Z', 'message': {'role': 'assistant', 'content': '', 'thinking': ' Ready'}, 'done': False}
+2026-05-29 11:37:34,110 INFO root - {'model': 'gemma4:31b', 'created_at': '2026-05-29T05:52:33.467224316Z', 'message': {'role': 'assistant', 'content': '', 'thinking': ' to explore the wonders'}, 'done': False}
+2026-05-29 11:37:34,137 INFO root - {'model': 'gemma4:31b', 'created_at': '2026-05-29T05:52:33.495541293Z', 'message': {'role': 'assistant', 'content': '', 'thinking': ' of science'}, 'done': False}
+2026-05-29 11:37:34,138 INFO root - {'model': 'gemma4:31b', 'created_at': '2026-05-29T05:52:33.495603719Z', 'message': {'role': 'assistant', 'content': '', 'thinking': ' today?" or "Hi'}, 'done': False}
+2026-05-29 11:37:34,167 INFO root - {'model': 'gemma4:31b', 'created_at': '2026-05-29T05:52:33.523853858Z', 'message': {'role': 'assistant', 'content': '', 'thinking': '!'}, 'done': False}
+2026-05-29 11:37:34,195 INFO root - {'model': 'gemma4:31b', 'created_at': '2026-05-29T05:52:33.552160551Z', 'message': {'role': 'assistant', 'content': '', 'thinking': ' Just pondering'}, 'done': False}
+2026-05-29 11:37:34,223 INFO root - {'model': 'gemma4:31b', 'created_at': '2026-05-29T05:52:33.580479361Z', 'message': {'role': 'assistant', 'content': '', 'thinking': ' the laws of thermodynamics'}, 'done': False}
+2026-05-29 11:37:34,251 INFO root - {'model': 'gemma4:31b', 'created_at': '2026-05-29T05:52:33.608787608Z', 'message': {'role': 'assistant', 'content': '', 'thinking': '. How'}, 'done': False}
+2026-05-29 11:37:34,280 INFO root - {'model': 'gemma4:31b', 'created_at': '2026-05-29T05:52:33.637097255Z', 'message': {'role': 'assistant', 'content': '', 'thinking': ' can I help you learn'}, 'done': False}
+2026-05-29 11:37:34,308 INFO root - {'model': 'gemma4:31b', 'created_at': '2026-05-29T05:52:33.665392727Z', 'message': {'role': 'assistant', 'content': '', 'thinking': ' today'}, 'done': False}
+2026-05-29 11:37:34,308 INFO root - {'model': 'gemma4:31b', 'created_at': '2026-05-29T05:52:33.665449918Z', 'message': {'role': 'assistant', 'content': '', 'thinking': '?"\n\n    *'}, 'done': False}
+2026-05-29 11:37:34,338 INFO root - {'model': 'gemma4:31b', 'created_at': '2026-05-29T05:52:33.694301801Z', 'message': {'role': 'assistant', 'content': '', 'thinking': '   Schema'}, 'done': False}
+2026-05-29 11:37:34,364 INFO root - {'model': 'gemma4:31b', 'created_at': '2026-05-29T05:52:33.721961729Z', 'message': {'role': 'assistant', 'content': '', 'thinking': ': `{'}, 'done': False}
+2026-05-29 11:37:34,393 INFO root - {'model': 'gemma4:31b', 'created_at': '2026-05-29T05:52:33.750255179Z', 'message': {'role': 'assistant', 'content': '', 'thinking': ' "chat": "...",'}, 'done': False}
+2026-05-29 11:37:34,422 INFO root - {'model': 'gemma4:31b', 'created_at': '2026-05-29T05:52:33.778534857Z', 'message': {'role': 'assistant', 'content': '', 'thinking': ' "role": "assistant'}, 'done': False}
+2026-05-29 11:37:34,448 INFO root - {'model': 'gemma4:31b', 'created_at': '2026-05-29T05:52:33.806808244Z', 'message': {'role': 'assistant', 'content': '', 'thinking': '" }`'}, 'done': False}
+2026-05-29 11:37:34,477 INFO root - {'model': 'gemma4:31b', 'created_at': '2026-05-29T05:52:33.835103773Z', 'message': {'role': 'assistant', 'content': '', 'thinking': '\n\n    *   `'}, 'done': False}
+2026-05-29 11:37:34,477 INFO root - {'model': 'gemma4:31b', 'created_at': '2026-05-29T05:52:33.835144766Z', 'message': {'role': 'assistant', 'content': '', 'thinking': 'chat`: "Hello!'}, 'done': False}
+2026-05-29 11:37:34,505 INFO root - {'model': 'gemma4:31b', 'created_at': '2026-05-29T05:52:33.8634233Z', 'message': {'role': 'assistant', 'content': '', 'thinking': ' I'}, 'done': False}
+2026-05-29 11:37:34,534 INFO root - {'model': 'gemma4:31b', 'created_at': '2026-05-29T05:52:33.891723241Z', 'message': {'role': 'assistant', 'content': '', 'thinking': "'m ready to help"}, 'done': False}
+2026-05-29 11:37:34,563 INFO root - {'model': 'gemma4:31b', 'created_at': '2026-05-29T05:52:33.920036846Z', 'message': {'role': 'assistant', 'content': '', 'thinking': ' you explore the wonders'}, 'done': False}
+2026-05-29 11:37:34,593 INFO root - {'model': 'gemma4:31b', 'created_at': '2026-05-29T05:52:33.948336713Z', 'message': {'role': 'assistant', 'content': '', 'thinking': " of science. What'"}, 'done': False}
+2026-05-29 11:37:34,622 INFO root - {'model': 'gemma4:31b', 'created_at': '2026-05-29T05:52:33.976601404Z', 'message': {'role': 'assistant', 'content': '', 'thinking': 's on your mind?"'}, 'done': False}
+2026-05-29 11:37:34,647 INFO root - {'model': 'gemma4:31b', 'created_at': '2026-05-29T05:52:34.004930826Z', 'message': {'role': 'assistant', 'content': '', 'thinking': ' (Length'}, 'done': False}
+2026-05-29 11:37:34,648 INFO root - {'model': 'gemma4:31b', 'created_at': '2026-05-29T05:52:34.004971752Z', 'message': {'role': 'assistant', 'content': '', 'thinking': ': 7'}, 'done': False}
+2026-05-29 11:37:34,676 INFO root - {'model': 'gemma4:31b', 'created_at': '2026-05-29T05:52:34.033235915Z', 'message': {'role': 'assistant', 'content': '', 'thinking': '8 characters'}, 'done': False}
+2026-05-29 11:37:34,703 INFO root - {'model': 'gemma4:31b', 'created_at': '2026-05-29T05:52:34.061521378Z', 'message': {'role': 'assistant', 'content': '', 'thinking': ' - fits 5-'}, 'done': False}
+2026-05-29 11:37:34,732 INFO root - {'model': 'gemma4:31b', 'created_at': '2026-05-29T05:52:34.089854878Z', 'message': {'role': 'assistant', 'content': '', 'thinking': '150).'}, 'done': False}
+2026-05-29 11:37:34,760 INFO root - {'model': 'gemma4:31b', 'created_at': '2026-05-29T05:52:34.118131361Z', 'message': {'role': 'assistant', 'content': '', 'thinking': '\n    *   `role'}, 'done': False}
+2026-05-29 11:37:34,788 INFO root - {'model': 'gemma4:31b', 'created_at': '2026-05-29T05:52:34.1464511Z', 'message': {'role': 'assistant', 'content': '', 'thinking': '`: "assistant".'}, 'done': False}
+2026-05-29 11:37:34,789 INFO root - {'model': 'gemma4:31b', 'created_at': '2026-05-29T05:52:34.146494168Z', 'message': {'role': 'assistant', 'content': '', 'thinking': '\n\n    *   Must'}, 'done': False}
+2026-05-29 11:37:34,816 INFO root - {'model': 'gemma4:31b', 'created_at': '2026-05-29T05:52:34.17475978Z', 'message': {'role': 'assistant', 'content': '', 'thinking': ' be ONLY'}, 'done': False}
+2026-05-29 11:37:34,845 INFO root - {'model': 'gemma4:31b', 'created_at': '2026-05-29T05:52:34.203036489Z', 'message': {'role': 'assistant', 'content': '', 'thinking': ' the'}, 'done': False}
+2026-05-29 11:37:34,875 INFO root - {'model': 'gemma4:31b', 'created_at': '2026-05-29T05:52:34.231326607Z', 'message': {'role': 'assistant', 'content': '', 'thinking': ' JSON/'}, 'done': False}
+2026-05-29 11:37:34,902 INFO root - {'model': 'gemma4:31b', 'created_at': '2026-05-29T05:52:34.259605808Z', 'message': {'role': 'assistant', 'content': '', 'thinking': 'object'}, 'done': False}
+2026-05-29 11:37:34,932 INFO root - {'model': 'gemma4:31b', 'created_at': '2026-05-29T05:52:34.28794671Z', 'message': {'role': 'assistant', 'content': '', 'thinking': ' format'}, 'done': False}
+2026-05-29 11:37:34,961 INFO root - {'model': 'gemma4:31b', 'created_at': '2026-05-29T05:52:34.316328667Z', 'message': {'role': 'assistant', 'content': '', 'thinking': ' specified'}, 'done': False}
+2026-05-29 11:37:34,962 INFO root - {'model': 'gemma4:31b', 'created_at': '2026-05-29T05:52:34.316386251Z', 'message': {'role': 'assistant', 'content': '', 'thinking': '.'}, 'done': False}
+2026-05-29 11:37:34,991 INFO root - {'model': 'gemma4:31b', 'created_at': '2026-05-29T05:52:34.344648438Z', 'message': {'role': 'assistant', 'content': '```'}, 'done': False}
+2026-05-29 11:37:35,015 INFO root - {'model': 'gemma4:31b', 'created_at': '2026-05-29T05:52:34.372939864Z', 'message': {'role': 'assistant', 'content': 'json\n{\n  '}, 'done': False}
+2026-05-29 11:37:35,050 INFO root - {'model': 'gemma4:31b', 'created_at': '2026-05-29T05:52:34.40125195Z', 'message': {'role': 'assistant', 'content': '"chat": "Hello'}, 'done': False}
+2026-05-29 11:37:35,072 INFO root - {'model': 'gemma4:31b', 'created_at': '2026-05-29T05:52:34.429540781Z', 'message': {'role': 'assistant', 'content': "! I'm ready"}, 'done': False}
+2026-05-29 11:37:35,102 INFO root - {'model': 'gemma4:31b', 'created_at': '2026-05-29T05:52:34.457896946Z', 'message': {'role': 'assistant', 'content': ' to help'}, 'done': False}
+2026-05-29 11:37:35,128 INFO root - {'model': 'gemma4:31b', 'created_at': '2026-05-29T05:52:34.486210931Z', 'message': {'role': 'assistant', 'content': ' you explore the wonders of'}, 'done': False}
+2026-05-29 11:37:35,130 INFO root - {'model': 'gemma4:31b', 'created_at': '2026-05-29T05:52:34.486264008Z', 'message': {'role': 'assistant', 'content': " science. What's"}, 'done': False}
+2026-05-29 11:37:35,158 INFO root - {'model': 'gemma4:31b', 'created_at': '2026-05-29T05:52:34.514555875Z', 'message': {'role': 'assistant', 'content': ' on your mind today?",'}, 'done': False}
+2026-05-29 11:37:35,186 INFO root - {'model': 'gemma4:31b', 'created_at': '2026-05-29T05:52:34.542861313Z', 'message': {'role': 'assistant', 'content': '\n  "role":'}, 'done': False}
+2026-05-29 11:37:35,214 INFO root - {'model': 'gemma4:31b', 'created_at': '2026-05-29T05:52:34.571190592Z', 'message': {'role': 'assistant', 'content': ' "assistant"\n}'}, 'done': False}
+2026-05-29 11:37:35,245 INFO root - {'model': 'gemma4:31b', 'created_at': '2026-05-29T05:52:34.599488727Z', 'message': {'role': 'assistant', 'content': '\n```'}, 'done': False}
+2026-05-29 11:37:35,245 INFO root - {'model': 'gemma4:31b', 'created_at': '2026-05-29T05:52:34.599540583Z', 'message': {'role': 'assistant', 'content': ''}, 'done': False}
+2026-05-29 11:37:35,323 INFO root - {'model': 'gemma4:31b', 'created_at': '2026-05-29T05:52:34.680310066Z', 'message': {'role': 'assistant', 'content': ''}, 'done': True, 'done_reason': 'stop', 'total_duration': 2272679448, 'prompt_eval_count': 77, 'eval_count': 296}
+2026-05-29 11:40:35,914 INFO __main__ - User ended chat session
+2026-05-29 11:40:37,209 INFO __main__ - Starting chat loop with provider=ollama thinking=True
+2026-05-29 11:40:39,210 INFO root - Ollama chat request received thinking=True
+2026-05-29 11:40:41,365 INFO httpx - HTTP Request: POST http://localhost:11434/api/chat "HTTP/1.1 200 OK"
+2026-05-29 11:40:55,690 INFO root - Ollama chat request received thinking=True
+2026-05-29 11:40:56,829 INFO httpx - HTTP Request: POST http://localhost:11434/api/chat "HTTP/1.1 200 OK"
+2026-05-29 11:43:08,713 INFO __main__ - User ended chat session
+2026-05-29 11:43:12,338 INFO __main__ - Starting chat loop with provider=ollama thinking=True
+2026-05-29 11:43:14,141 INFO root - Ollama chat request received thinking=True
+2026-05-29 11:43:15,552 INFO httpx - HTTP Request: POST http://localhost:11434/api/chat "HTTP/1.1 200 OK"
+2026-05-29 11:44:02,683 INFO __main__ - Starting chat loop with provider=ollama thinking=True
+2026-05-29 11:44:05,674 INFO root - Ollama chat request received thinking=True
+2026-05-29 11:44:07,480 INFO httpx - HTTP Request: POST http://localhost:11434/api/chat "HTTP/1.1 200 OK"
+2026-05-29 11:44:27,822 INFO __main__ - User ended chat session
+2026-05-29 11:44:29,600 INFO __main__ - Starting chat loop with provider=ollama thinking=True
+2026-05-29 11:44:32,329 INFO root - Ollama chat request received thinking=True
+2026-05-29 11:44:33,672 INFO httpx - HTTP Request: POST http://localhost:11434/api/chat "HTTP/1.1 200 OK"
+2026-05-29 11:45:34,413 INFO __main__ - User ended chat session
+2026-05-29 11:45:35,613 INFO __main__ - Starting chat loop with provider=ollama thinking=True
+2026-05-29 11:45:37,779 INFO root - Ollama chat request received thinking=True
+2026-05-29 11:45:43,335 INFO httpx - HTTP Request: POST http://localhost:11434/api/chat "HTTP/1.1 200 OK"
+2026-05-29 11:46:29,995 INFO __main__ - User ended chat session
+2026-05-29 11:46:31,248 INFO __main__ - Starting chat loop with provider=ollama thinking=True
+2026-05-29 11:46:33,713 INFO root - Ollama chat request received thinking=True
+2026-05-29 11:46:41,406 INFO httpx - HTTP Request: POST http://localhost:11434/api/chat "HTTP/1.1 200 OK"
+2026-05-29 11:47:26,239 INFO __main__ - User ended chat session
+2026-05-29 11:47:28,770 INFO __main__ - Starting chat loop with provider=ollama thinking=True
+2026-05-29 11:47:31,101 INFO root - Ollama chat request received thinking=True
+2026-05-29 11:47:32,099 INFO httpx - HTTP Request: POST http://localhost:11434/api/chat "HTTP/1.1 200 OK"
+2026-05-29 11:54:02,499 INFO __main__ - User ended chat session
+2026-05-29 11:54:10,382 INFO __main__ - Starting chat loop with provider=ollama thinking=True
+2026-05-29 11:54:12,959 INFO root - Ollama chat request received thinking=True
+2026-05-29 11:54:15,182 INFO httpx - HTTP Request: POST http://localhost:11434/api/chat "HTTP/1.1 200 OK"
+2026-05-29 11:55:15,026 INFO root - Ollama chat request received thinking=True
+2026-05-29 11:55:20,241 INFO httpx - HTTP Request: POST http://localhost:11434/api/chat "HTTP/1.1 200 OK"
+2026-05-29 11:55:22,377 INFO __main__ - Starting chat loop with provider=ollama thinking=True
+2026-05-29 11:55:24,358 INFO root - Ollama chat request received thinking=True
+2026-05-29 11:55:28,623 INFO httpx - HTTP Request: POST http://localhost:11434/api/chat "HTTP/1.1 200 OK"
+2026-05-29 11:55:35,119 INFO root - Ollama chat request received thinking=True
+2026-05-29 11:55:36,011 INFO httpx - HTTP Request: POST http://localhost:11434/api/chat "HTTP/1.1 200 OK"
+2026-05-29 11:55:52,299 INFO root - Ollama chat request received thinking=True
+2026-05-29 11:55:53,297 INFO httpx - HTTP Request: POST http://localhost:11434/api/chat "HTTP/1.1 200 OK"
+2026-05-29 11:56:36,338 INFO __main__ - User ended chat session
